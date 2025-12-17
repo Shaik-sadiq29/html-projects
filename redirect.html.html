@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bug Report Success</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #3f6ae1;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .modal {
+        width: 420px;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+        padding: 30px 30px 26px;
+        text-align: center;
+        position: relative;
+      }
+      .close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 14px;
+        color: #888;
+        cursor: pointer;
+      }
+      .check {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: 2px solid #e5e7eb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto 18px;
+      }
+      .check svg {
+        width: 26px;
+        height: 26px;
+        color: #22c55e;
+      }
+      h2 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+        margin: 0 0 22px;
+        line-height: 1.4;
+      }
+      .btn {
+        display: inline-block;
+        background: #3f6ae1;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 26px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .link {
+        display: block;
+        margin-top: 14px;
+        font-size: 13px;
+        color: #3f6ae1;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="close">✕ <small>ESC</small></div>
+      <div class="check">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="3"
+          a
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+      </div>
+      <h2>
+        Thank you for reporting these email. It's<br />very helpful for us!
+      </h2>
+      <button class="btn">Close this window</button>
+      <a href="#" class="link">Report another email</a>
+    </div>
+  </body>
+</html>
