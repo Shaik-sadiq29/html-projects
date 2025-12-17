@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bug Report Success</title>
+
     <style>
       * {
         box-sizing: border-box;
       }
+
       body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
@@ -17,6 +19,7 @@
         align-items: center;
         justify-content: center;
       }
+
       .modal {
         width: 420px;
         background: #ffffff;
@@ -26,14 +29,20 @@
         text-align: center;
         position: relative;
       }
+
       .close {
         position: absolute;
         top: 16px;
         right: 16px;
-        font-size: 14px;
+        font-size: 12px;
         color: #888;
-        cursor: pointer;
       }
+
+      .close a {
+        color: #888;
+        text-decoration: none;
+      }
+
       .check {
         width: 56px;
         height: 56px;
@@ -44,11 +53,13 @@
         justify-content: center;
         margin: 10px auto 18px;
       }
+
       .check svg {
         width: 26px;
         height: 26px;
-        color: #22c55e;
+        stroke: #22c55e;
       }
+
       h2 {
         font-size: 18px;
         font-weight: 500;
@@ -56,16 +67,18 @@
         margin: 0 0 22px;
         line-height: 1.4;
       }
+
       .btn {
         display: inline-block;
         background: #3f6ae1;
         color: #ffffff;
-        border: none;
         border-radius: 6px;
         padding: 12px 26px;
         font-size: 14px;
-        cursor: pointer;
+        text-decoration: none;
+        margin-bottom: 12px;
       }
+
       .link {
         display: block;
         margin-top: 14px;
@@ -75,27 +88,52 @@
       }
     </style>
   </head>
+
   <body>
     <div class="modal">
-      <div class="close">✕ <small>ESC</small></div>
+      <!-- Close (top-right) -->
+      <div class="close">
+        <a
+          href="https://shaik-sadiq29.github.io/html-projects/first%20premier.html"
+        >
+          ✕ <small>ESC</small>
+        </a>
+      </div>
+
+      <!-- Check icon -->
       <div class="check">
         <svg
           viewBox="0 0 24 24"
           fill="none"
-          stroke="currentColor"
           stroke-width="3"
-          a
           stroke-linecap="round"
           stroke-linejoin="round"
         >
           <polyline points="20 6 9 17 4 12" />
         </svg>
       </div>
+
+      <!-- Message -->
       <h2>
-        Thank you for reporting these email. It's<br />very helpful for us!
+        Thank you for reporting this email.<br />
+        It’s very helpful for us.
       </h2>
-      <button class="btn">Close this window</button>
-      <a href="#" class="link">Report another email</a>
+
+      <!-- Close button -->
+      <a
+        href="https://shaik-sadiq29.github.io/html-projects/first%20premier.html"
+        class="btn"
+      >
+        Close this window
+      </a>
+
+      <!-- Report another -->
+      <a
+        href="https://shaik-sadiq29.github.io/html-projects/first%20premier.html"
+        class="link"
+      >
+        Report another email
+      </a>
     </div>
   </body>
 </html>
